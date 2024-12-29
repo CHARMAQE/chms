@@ -1,0 +1,27 @@
+/* Increase the font size for the title */
+.chart-title {
+    -fx-font-size: 24px;  /* Larger font size for the chart title */
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Increase the font size for X and Y axis labels */
+.chart-category-axis .axis-label,
+.chart-value-axis .axis-label {
+    -fx-font-size: 18px;  /* Larger font size for axis labels */
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Style the bar chart with larger font labels */
+.chart-bar {
+    -fx-bar-fill: #4caf50; /* Green bars */
+}
+
+/* Increase font size for tooltips */
+.chart .chart-tooltip {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+    -fx-font-size: 16px; /* Larger font size for tooltips */
+    -fx-padding: 5px;
+}

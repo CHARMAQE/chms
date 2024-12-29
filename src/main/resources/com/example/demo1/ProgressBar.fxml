@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo1.Controller.ProgressBarController"
+            prefHeight="400.0" prefWidth="600.0">
+    <!-- StackPane to center content -->
+    <StackPane alignment="CENTER" prefWidth="600.0" prefHeight="400.0">
+        <!-- VBox for layout, containing title, percentage, and progress bar -->
+        <VBox spacing="20" alignment="CENTER">
+            <!-- Title for the Progress Bar -->
+            <Label text="Progression du rendez-vous par rapport a l'année dernière" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+            <!-- Progress Bar -->
+            <ProgressBar fx:id="progressBar" prefWidth="400.0" />
+
+            <!-- Label to show percentage -->
+            <Label fx:id="percentageLabel" style="-fx-font-size: 16px;"/>
+        </VBox>
+    </StackPane>
+</AnchorPane>

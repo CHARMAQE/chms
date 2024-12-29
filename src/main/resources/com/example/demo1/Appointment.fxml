@@ -5,19 +5,23 @@
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<?import java.net.URL?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.demo1.Controller.Vis2TestResultController"
-            prefHeight="400.0" prefWidth="600.0"
-            stylesheets="@style1.css"> <!-- Link to CSS file -->
+            fx:controller="com.example.demo1.Controller.AppointmentController"
+            prefHeight="600.0" prefWidth="800.0">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
     <BarChart fx:id="barChart"
               layoutX="50.0" layoutY="50.0"
-              prefHeight="300.0" prefWidth="500.0">
+              prefHeight="400.0" prefWidth="600.0">
         <xAxis>
-            <CategoryAxis fx:id="xAxis" label="Month"/>
+            <CategoryAxis fx:id="xAxis" label="Service"/>
         </xAxis>
         <yAxis>
-            <NumberAxis fx:id="yAxis" label="Number of Tests"/>
+            <NumberAxis fx:id="yAxis" label="Nombre de rendez-vous"/>
         </yAxis>
     </BarChart>
 </AnchorPane>
